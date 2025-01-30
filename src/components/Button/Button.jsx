@@ -1,24 +1,18 @@
-import PropTypes from 'prop-types'; // ES6
-import './button.css'
+import PropTypes from 'prop-types';
+import './button.css';
 
-
-export default function Button ({label, disabled = false, onClick}) {
-
-
-    // const text = '<i>Меня зовут Александр и я пробую учиться веб-разработке</i>'
-    // const images = [photo_1, photo_2, photo_3];
+export default function Button({ label, disabled = false, onClick }) {
     return (
-
         <button disabled={disabled} onClick={onClick}>{label}</button>
-        
-           
-    )};
+    );
+};
 
-    Button.PropTypes = {
-        label: PropTypes.string.isRequired,
-        disabled: PropTypes.bool,
-        onclick: PropTypes.func
-        };
+Button.propTypes = {
+    label: PropTypes.string.isRequired,
+    disabled: PropTypes.bool,
+    onClick: PropTypes.func // Исправлено: onClick
+};
+
         
 
 /*<button disabled = {buttonState.previous} onClick={()=>{
