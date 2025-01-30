@@ -6,5 +6,5 @@ export default function Slide ({image}) {
 }
 
 Slide.propTypes = {
-    image: propTypes.image
+    image: PropTypes.image
 }
