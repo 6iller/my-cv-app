@@ -18,11 +18,13 @@ export default function Slider() {
     };
 
     return (
-        <div className="gallery-container">
+        <div className="slider-container">
+            <div>
+             <Slide key={index} image={images[index]} />    
+             </div>
             <div className='button-container'>
-                <Slide key={index} image={images[index]} />
-                <Button label={'<'} onClick={handlePrev} /> {/* label добавлен */}
-                <Button label={'>'} onClick={handleNext} /> {/* label добавлен */}
+                <Button label={'<'} onClick={handlePrev} /> {/* label */}
+                <Button label={'>'} onClick={handleNext} /> {/* label */}
                 
             </div>
         </div>

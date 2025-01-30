@@ -10,7 +10,7 @@ export default function Button({ label, disabled = false, onClick }) {
 Button.propTypes = {
     label: PropTypes.string.isRequired,
     disabled: PropTypes.bool,
-    onClick: PropTypes.func // Исправлено: onClick
+    onClick: PropTypes.func
 };
 
         
