@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
-
+import './Header.css'
+import image1 from  '../../assets/logo.png';
 export default function Header () {
     const MENU = [
         {title: 'Home', to: 'Home', key:uuidv4()}, 
@@ -10,12 +11,13 @@ export default function Header () {
     ]
     return (
         <header>
-        <div className="logo">logo</div>
+        <div className="logo"><img src={image1} alt="Logo" /></div>
         <nav>
             <ul>
                 {MENU.map(({title, key}) => <li key = {key}>{title}</li>)}
             </ul>
         </nav>
+        <button className="contact-button">Contact</button> 
         </header>   
     )
 };
