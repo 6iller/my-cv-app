@@ -1,16 +1,23 @@
+// Menu.jsx
 import { v4 as uuidv4 } from 'uuid';
+import { Link } from 'react-router-dom';
 
-export default function Menu () {
+export default function Menu() {
     const MENU = [
-        {title: 'Home', to: 'Home', key:uuidv4()}, 
-        {title: 'Services', to: 'Services', key:uuidv4()}, 
-        {title: 'Portfolio', to: 'portfolio', key:uuidv4()}, 
-        {title: 'About us', to: 'about us', key:uuidv4()}, 
+        {title: 'Home', to: '/', key:uuidv4()}, // Изменено на '/'
+        {title: 'Blog', to: '/services', key:uuidv4()},
+        {title: 'Portfolio', to: '/portfolio', key:uuidv4()}, // Изменено на '/portfolio'
+        {title: 'About us', to: '/about-us', key:uuidv4()},
     ]
-   return (<nav>
-    <ul>
-        {MENU.map(({title, key}) => <li key = {key}>{title}</li>)}
-    </ul>
-</nav>
-   )
+    return (
+        <nav>
+            <ul>
+                {MENU.map(({title, to, key}) => (
+                    <li key={key}>
+                        <Link to={to}>{title}</Link>
+                    </li>
+                ))}
+            </ul>
+        </nav>
+    );
 };
