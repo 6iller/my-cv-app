@@ -4,17 +4,18 @@ import './App.css'
 import Button from './components/Button/Button'
 import Slider from './components/Slider/Slider'
 import Footer from './components/Footer/Footer'
+import MainComponent from './components/Main/MainComponent'
 
-function App() {
+export default function App() {
 
   return (
-    <Fragment>
-      <Header/>
-      <Slider/>
-      <Button/>
-      <Footer/>
-    </Fragment>
-  )
+  <MainComponent/>)
+  //   <Fragment>
+  //     <Header/>
+  //     <Slider/>
+  //     <Button/>
+  //     <Footer/>
+  //   </Fragment>
+  // )
 }
 
-export default App

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import image1 from  '../../assets/unsplash_1.png';
 import image2 from '../../assets/unsplash_2.png';
 import image3 from '../../assets/unsplash_3.png';
-import Button from '../Button/Button';
+import Button_slider from '../Button/Button_slider.jsx';
 import Slide from './Slide';
 
 export default function Slider() {
@@ -23,8 +23,8 @@ export default function Slider() {
              <Slide key={index} image={images[index]} />    
              </div>
             <div className='button-container'>
-                <Button label={'<'} onClick={handlePrev} /> {/* label */}
-                <Button label={'>'} onClick={handleNext} /> {/* label */}
+                <Button_slider label={'<'} onClick={handlePrev} /> {/* label */}
+                <Button_slider label={'>'} onClick={handleNext} /> {/* label */}
                 
             </div>
         </div>
