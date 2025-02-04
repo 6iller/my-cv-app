@@ -12,11 +12,11 @@ import ReactDom from 'react-dom/client';
 
 export default function MainComponent () {
 const [formIsActive, setFormActive] = useState(false)
-return (<Layout>
+return (<>
 <Button label='обратная связь' onClick={()=>setFormActive(active=>!active)}/>
   <>{formIsActive &&<Form/>}</>
   {/* <Slider/> */}
-</Layout>
+</>
 )
 };
 

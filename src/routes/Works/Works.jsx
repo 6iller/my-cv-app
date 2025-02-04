@@ -4,12 +4,12 @@ import Layout from '../../components/Layout/Layout';
 
 export default function Works() {
   return (
-    <Layout>
+    <>
     <div>
         
       <h1>Works</h1>
       <Slider />
     </div>
-    </Layout>
+    </>
   );
 }
