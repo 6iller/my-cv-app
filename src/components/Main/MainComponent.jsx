@@ -1,23 +1,23 @@
-// import { StrictMode } from 'react'
-// import { createRoot } from 'react-dom/client'
-// import '../../index.css'
 import {useState} from "react";
 import Button from '../Button/Button.jsx';
 import Form from "../Form/Form.jsx";
-import Slider from '../Slider/Slider.jsx';
-import Layout from '../Layout/Layout.jsx';
 import React from 'react';
-import ReactDom from 'react-dom/client';
-
+import './MainComponent.css';
 
 export default function MainComponent () {
-const [formIsActive, setFormActive] = useState(false)
-return (<>
-<Button label='обратная связь' onClick={()=>setFormActive(active=>!active)}/>
-  <>{formIsActive &&<Form/>}</>
-  {/* <Slider/> */}
-</>
-)
+  const [formIsActive, setFormActive] = useState(false);
+  return (
+    <div className="main-component">
+      <div className="main-component__background"></div> {/* Контейнер для фона */}
+      <div className="main-component__content"> {/* Контейнер для контента */}
+        <p>Меня зовут Александр и я пробую учиться веб-разработке</p>
+        <Button label='обратная связь' onClick={()=>setFormActive(active=>!active)}/>
+        {formIsActive && <Form/>}
+      </div>
+    </div>
+  );
 };
+
+
 
 // у преподавателя layout не рендерится тут, он убран

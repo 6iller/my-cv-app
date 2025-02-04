@@ -1,0 +1,28 @@
+/* .main-component {
+    background-image: url('../../assets/unsplash_3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  } */
+  
+  .main-component {
+    display: flex; /* Используем flexbox */
+    
+    min-height: 100vh;
+  }
+  
+  .main-component__content {
+    /* flex: 1; Занимает оставшееся пространство */
+    
+  }
+  
+  .main-component__background {
+    background-image: url('../../assets/unsplash_3.png'); /* Путь к картинке */
+    justify-content:flex-start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%; /* Занимает половину ширины */
+    min-height: 100vh; /* Занимает всю высоту */
+
+  }
+  

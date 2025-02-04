@@ -80,7 +80,6 @@ function Modal({ isOpen, onClose }) {
 }
 
 export default function Button() {
-    const text = '<i>Меня зовут Александр и я пробую учиться веб-разработке</i>';
     const [isModalOpen, setModalOpen] = useState(false);
 
     const handleOpenModal = () => setModalOpen(true);
@@ -88,7 +87,6 @@ export default function Button() {
 
     return (
         <>
-            <p dangerouslySetInnerHTML={{ __html: text }} />
             <button onClick={handleOpenModal}>Обратная связь</button>
             <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
         </>

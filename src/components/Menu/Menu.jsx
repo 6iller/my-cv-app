@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Menu() {
     const MENU = [
         {title: 'Home', to: '/', key:uuidv4()}, // Изменено на '/'
-        {title: 'Blog', to: '/services', key:uuidv4()},
+        {title: 'Blog', to: '/blog', key:uuidv4()},
         {title: 'Works', to: '/works', key:uuidv4()}, // Изменено на '/portfolio'
         {title: 'About us', to: '/about-us', key:uuidv4()},
     ]

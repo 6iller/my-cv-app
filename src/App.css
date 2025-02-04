@@ -3,8 +3,16 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  color: #646cff;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2rem;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
