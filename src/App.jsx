@@ -8,7 +8,7 @@ import Slider from './components/Slider/Slider'
 import Footer from './components/Footer/Footer'
 import MainComponent from './components/Main/MainComponent'
 import Layout from './components/Layout/Layout';
-import PortfolioPage from './routes/PortfolioPage/PortfolioPage';
+import Works from './routes/Works/Works';
 
 export default function App() {
 
@@ -17,7 +17,7 @@ export default function App() {
       {/* <Layout> */}
         <Routes>
           <Route path="/" element={<MainComponent />} />
-          <Route path="/portfolio" element={<PortfolioPage />} /> {/* Маршрут для Portfolio */}
+          <Route path="/works" element={<Works />} /> {/* Маршрут для Portfolio */}
         </Routes>
       {/* </Layout> */}
     </Router>

@@ -6,7 +6,7 @@ export default function Menu() {
     const MENU = [
         {title: 'Home', to: '/', key:uuidv4()}, // Изменено на '/'
         {title: 'Blog', to: '/services', key:uuidv4()},
-        {title: 'Portfolio', to: '/portfolio', key:uuidv4()}, // Изменено на '/portfolio'
+        {title: 'Works', to: '/works', key:uuidv4()}, // Изменено на '/portfolio'
         {title: 'About us', to: '/about-us', key:uuidv4()},
     ]
     return (
