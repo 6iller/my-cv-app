@@ -48,3 +48,7 @@ p {
 .read-the-docs {
   color: #888;
 }
+
+main {
+  flex-basis: 85vh;
+}

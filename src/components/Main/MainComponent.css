@@ -5,24 +5,40 @@
     min-height: 100vh;
   } */
   
+/* .main-component {
+    background-image: url('../../assets/unsplash_3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  } */
+  
   .main-component {
     display: flex; /* Используем flexbox */
-    
-    min-height: 100vh;
+    /* justify-content: flex-end; */
+    flex-direction: row-reverse;
+    min-height: 80vh;
+    position: relative;
+
   }
   
   .main-component__content {
-    /* flex: 1; Занимает оставшееся пространство */
-    
+    flex: 1; 
+    padding: 20px; /* Добавлено для отступа от фона */
+  box-sizing: border-box; /* Учитывает padding в ширине */
+  z-index: 2;
+  position: relative;
   }
   
   .main-component__background {
-    background-image: url('../../assets/unsplash_3.png'); /* Путь к картинке */
-    justify-content:flex-start;
+    background-image: url('../../assets/harold.png'); /* Путь к картинке */
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%; /* Занимает половину ширины */
     min-height: 100vh; /* Занимает всю высоту */
+    margin: 1rem;
+    z-index: 1;
+    position: relative;
 
   }
+  
   
