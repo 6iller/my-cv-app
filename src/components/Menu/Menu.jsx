@@ -11,7 +11,7 @@ export default function Menu() {
     ]
     return (
         <nav>
-            <ul className="menu-item">
+            <ul>
                 {MENU.map(({title, to, key}) => (
                     <li key={key}>
                         <Link to={to}>{title}</Link>
