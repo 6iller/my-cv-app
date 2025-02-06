@@ -1,11 +1,6 @@
-import { Fragment } from 'react'
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header/Header'
 import './App.css'
-import Button from './components/Button/Button'
-import Slider from './components/Slider/Slider'
-import Footer from './components/Footer/Footer'
 import MainComponent from './components/Main/MainComponent'
 import Layout from './components/Layout/Layout';
 import Works from './routes/Works/Works';
@@ -19,7 +14,7 @@ export default function App() {
   return (
     <Router>
       <Layout>
-      {windowSize.width < 768 && <BurgerMenu />} {/* Условный рендеринг */}
+      {windowSize.width < 768 && <BurgerMenu />}
         <Routes>
           <Route path="/" element={<MainComponent />} />
           <Route path="/blog" element={<Blog />} />

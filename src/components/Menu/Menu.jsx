@@ -4,9 +4,9 @@ import './menu.css'
 
 export default function Menu() {
     const MENU = [
-        {title: 'Home', to: '/', key:uuidv4()}, // Изменено на '/'
+        {title: 'Home', to: '/', key:uuidv4()},
         {title: 'Blog', to: '/blog', key:uuidv4()},
-        {title: 'Works', to: '/works', key:uuidv4()}, // Изменено на '/portfolio'
+        {title: 'Works', to: '/works', key:uuidv4()},
         {title: 'About us', to: '/about-us', key:uuidv4()},
     ]
     return (

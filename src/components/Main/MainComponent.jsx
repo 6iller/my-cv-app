@@ -8,8 +8,8 @@ export default function MainComponent () {
   const [formIsActive, setFormActive] = useState(false);
   return (
     <div className="main-component">
-      <div className="main-component__background"></div> {/* Контейнер для фона */}
-      <div className="main-component__content"> {/* Контейнер для контента */}
+      <div className="main-component__background"></div>
+      <div className="main-component__content">
         <p>Меня зовут Гарольд и я пробую учиться веб-разработке</p>
         <div className="feedback"><Button label='обратная связь' onClick={()=>setFormActive(active=>!active)}/> </div>
         {formIsActive && <Form/>}
@@ -19,5 +19,3 @@ export default function MainComponent () {
 };
 
 
-
-// у преподавателя layout не рендерится тут, он убран

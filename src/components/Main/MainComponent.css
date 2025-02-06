@@ -3,7 +3,6 @@
   flex-direction: row-reverse;
   min-height: 80vh;
   position: relative;
-  /* Добавлено для корректного z-index */
   z-index: 0;
   
 }
@@ -12,7 +11,7 @@
   flex: 1;
   padding: 200px 20px 40px 60px;
   box-sizing: border-box;
-  z-index: 2; /* Текст будет поверх */
+  z-index: 2; 
   position: relative;
   text-align: left;
   
@@ -25,7 +24,7 @@
   width: 50%;
   min-height: 50%;
   margin: 1rem;
-  z-index: 1; /* Фон будет под текстом */
+  z-index: 1;
   position: relative;
   
 }
