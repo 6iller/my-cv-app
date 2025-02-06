@@ -1,44 +1,44 @@
-/* .main-component {
-    background-image: url('../../assets/unsplash_3.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-  } */
-  
-/* .main-component {
-    background-image: url('../../assets/unsplash_3.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-  } */
-  
-  .main-component {
-    display: flex; /* Используем flexbox */
-    /* justify-content: flex-end; */
-    flex-direction: row-reverse;
-    min-height: 80vh;
-    position: relative;
-
-  }
-  
-  .main-component__content {
-    flex: 1; 
-    padding: 20px; /* Добавлено для отступа от фона */
-  box-sizing: border-box; /* Учитывает padding в ширине */
-  z-index: 2;
+.main-component {
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: 80vh;
   position: relative;
-  }
+  /* Добавлено для корректного z-index */
+  z-index: 0;
   
-  .main-component__background {
-    background-image: url('../../assets/harold.png'); /* Путь к картинке */
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 50%; /* Занимает половину ширины */
-    min-height: 100vh; /* Занимает всю высоту */
-    margin: 1rem;
-    z-index: 1;
-    position: relative;
+}
 
-  }
+.main-component__content {
+  flex: 1;
+  padding: 200px 20px 40px 60px;
+  box-sizing: border-box;
+  z-index: 2; /* Текст будет поверх */
+  position: relative;
+  text-align: left;
   
+}
+
+.main-component__background {
+  background-image: url('../../assets/harold.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  min-height: 50%;
+  margin: 1rem;
+  z-index: 1; /* Фон будет под текстом */
+  position: relative;
   
+}
+
+p {
+  text-transform: uppercase;
+  color: rgb(75, 75, 75);
+  font-weight: 600;
+}
+
+button {
+  background-color: rgb(75, 75, 75);
+}
+button:hover {
+    color: #535bf2;
+}

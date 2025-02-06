@@ -10,8 +10,8 @@ export default function MainComponent () {
     <div className="main-component">
       <div className="main-component__background"></div> {/* Контейнер для фона */}
       <div className="main-component__content"> {/* Контейнер для контента */}
-        <p>Меня зовут Александр и я пробую учиться веб-разработке</p>
-        <Button label='обратная связь' onClick={()=>setFormActive(active=>!active)}/>
+        <p>Меня зовут Гарольд и я пробую учиться веб-разработке</p>
+        <div className="feedback"><Button label='обратная связь' onClick={()=>setFormActive(active=>!active)}/> </div>
         {formIsActive && <Form/>}
       </div>
     </div>

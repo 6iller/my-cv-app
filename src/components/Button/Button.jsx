@@ -1,59 +1,3 @@
-// import PropTypes from 'prop-types';
-// import './button.css';
-
-// export default function Button({className, label, disabled = false, onClick }) {
-//     return (
-//         <>
-//         <button className={className} disabled={disabled} onClick={onClick}>{label}</button>
-//         <form>
-// <label htmlFor="email">email:</label>
-// <input id="name"/>
-// <label htmlFor="phone">phone:</label>
-// <input id="phone"/>
-// <label htmlFor="message">message:</label>
-// <input id="message"/>
-// {/* <input type="checkbox"></input> */}
-//     </form>
-//     </>
-//     );
-// };
-
-// Button.propTypes = {
-//     className: PropTypes.string,
-//     label: PropTypes.string.isRequired,
-//     disabled: PropTypes.bool,
-//     onClick: PropTypes.func
-// };
-
-        
-
-/*<button disabled = {buttonState.previous} onClick={()=>{
-    setIndex(index-=1);
-    if (buttonState.next) {
-        setDisabled((prev) => ({...prev, next: false}))
-    }
-    if (index<1) {
-        setDisabled((prev)=>({...prev, previous: true}))
-    }
-    }}>&lt;</button>
-<button disabled={buttonState.next} onClick={()=>{
-setIndex(index +=1)
-if(buttonState.previous) {
-setDisabled((prev)=>({...prev, previous: false}))
-}
-if (index>1) {
-setDisabled(prev=>({...prev, next: true}))
-}
-}}>&gt;</button>
-
-
-
-
-
-
-    /* <p dangerouslySetInnerHTML={{__html: text}}/>
-    <button onClick={()=> console.log('here')}>Обратная связь</button> */
- 
 import React, { useState } from 'react';
 import './Button.css' 
 
@@ -93,17 +37,18 @@ export default function Button() {
     );
 }
 
-// Стили для модального окна
+// Стили
 const modalStyles = {
     position: 'fixed',
     top: 0,
-    left: 200,
+    left: 0,
     right: 0,
     bottom: 0,
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    color: 'white',
 
 };
 
@@ -112,8 +57,7 @@ const modalContentStyles = {
     padding: '20px',
     borderRadius: '20px',
     position: 'relative',
-    
-};
+    };
 
 const closeButtonStyles = {
     position: 'absolute',

@@ -14,7 +14,7 @@ export default function Header () {
         <header>
         <div className="logo"><img src={image1} alt="Logo" /></div>
   <Menu></Menu>
-        <button className="contact-button">Contact</button> 
+        <button className="contact-button">Contacts</button> 
         </header>   
     )
 };

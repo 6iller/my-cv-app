@@ -1,6 +1,6 @@
-// Menu.jsx
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
+import './menu.css'
 
 export default function Menu() {
     const MENU = [
@@ -11,7 +11,7 @@ export default function Menu() {
     ]
     return (
         <nav>
-            <ul>
+            <ul className="menu-item">
                 {MENU.map(({title, to, key}) => (
                     <li key={key}>
                         <Link to={to}>{title}</Link>

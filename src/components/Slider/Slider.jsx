@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import image1 from  '../../assets/unsplash_1.png';
-import image2 from '../../assets/unsplash_2.png';
-import image3 from '../../assets/unsplash_3.png';
+import image1 from  '../../assets/hung0.jpg';
+import image2 from '../../assets/hung1.jpg';
+import image3 from '../../assets/hung2.jpg';
 import Button_slider from '../Button/Button_slider.jsx';
 import Slide from './Slide';
 
