@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import './Header.css'
-import image1 from  '../../assets/logo.png';
+import Favicon from  '../../assets/favicon.png';
 import Menu from '../Menu/Menu';
 export default function Header () {
     // const MENU = [
@@ -12,7 +12,7 @@ export default function Header () {
     // ]
     return (
         <header>
-        <div className="logo"><img src={image1} alt="Logo" /></div>
+        <div className="logo"><img src={Favicon} alt="Logo" /></div>
   <Menu></Menu>
         <button className="contact-button">Contacts</button> 
         </header>   
