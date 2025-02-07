@@ -7,7 +7,7 @@ function Modal({ isOpen, onClose }) {
     return (
         <div style={modalStyles}>
             <div style={modalContentStyles}>
-                <button onClick={onClose} style={closeButtonStyles}>✖️</button>
+                <button onClick={onClose} style={closeButtonStyles}>X</button>
                 <h2>Обратная связь</h2>
                 <form>
                     <label className="label, "htmlFor="email">Email:</label>

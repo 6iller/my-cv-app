@@ -11,5 +11,5 @@ return (
 )
 }
 Layout.propTypes = {
-    children: PropTypes.children
+    children: PropTypes.node.isRequired
 };
