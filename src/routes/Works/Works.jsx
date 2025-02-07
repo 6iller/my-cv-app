@@ -1,6 +1,5 @@
 import React from 'react';
 import Slider from '../../components/Slider/Slider';
-import Layout from '../../components/Layout/Layout';
 
 export default function Works() {
   return (
