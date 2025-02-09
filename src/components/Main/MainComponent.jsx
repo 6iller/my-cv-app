@@ -1,21 +1,27 @@
-import {useState} from "react";
+import React, { useState } from 'react';
 import Button from '../Button/Button.jsx';
-import Form from "../Form/Form.jsx";
-import React from 'react';
+import Form from '../Form/Form.jsx';
 import './MainComponent.css';
 
-export default function MainComponent () {
-  const [formIsActive, setFormActive] = useState(false);
+export default function MainComponent() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="main-component">
       <div className="main-component__background"></div>
       <div className="main-component__content">
         <p>Меня зовут Гарольд и я пробую учиться веб-разработке</p>
-        <div className="feedback"><Button label='обратная связь' onClick={()=>setFormActive(active=>!active)}/> </div>
-        {formIsActive && <Form/>}
+        <div className="feedback">
+          <Button onClick={() => setIsModalOpen(true)} />
+        </div>
+        {isModalOpen && (
+          <div className="modal-overlay"> {/* Добавили overlay */}
+            <Form onClose={() => setIsModalOpen(false)} />
+          </div>
+        )}
       </div>
     </div>
   );
-};
+}
 
 
