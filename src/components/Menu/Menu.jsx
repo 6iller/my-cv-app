@@ -7,7 +7,7 @@ export default function Menu() {
         {title: 'Home', to: '/', key:uuidv4()},
         {title: 'Blog', to: '/blog', key:uuidv4()},
         {title: 'Works', to: '/works', key:uuidv4()},
-        {title: 'About us', to: '/about-us', key:uuidv4()},
+        {title: 'ToDo', to: '/ToDo', key:uuidv4()},
     ]
     return (
         <nav>

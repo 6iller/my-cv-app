@@ -15,7 +15,7 @@ export default function MainComponent() {
           <Button onClick={() => setIsModalOpen(true)} />
         </div>
         {isModalOpen && (
-          <div className="modal-overlay"> {/* Добавили overlay */}
+          <div className="modal-overlay">
             <Form onClose={() => setIsModalOpen(false)} />
           </div>
         )}
