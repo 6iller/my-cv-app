@@ -49,12 +49,12 @@ export default function FormPractice() {
             {!isAuthenticated ? (
                 <form className="form-input" onSubmit={handleSubmit(onSubmit)}>
                     <div>
-                        <label>Введите email, например emily.johnson@x.dummyjson.com</label>
+                        <label>Введите email, например michael.williams@x.dummyjson.com</label>
                         <input className="input" type="email" {...register("email", { required: true, pattern: /^[^@]+@[^@]+\.[^@]+$/ })} />
                         {errors.email && <p className="error">Поле Email обязательное и должно быть email адресом</p>}
                     </div>
                     <div>
-                        <label>Введите пароль, например emilyspass</label>
+                        <label>Введите пароль, например michaelwpass</label>
                         <input className="input" type="password" {...register("password", { required: true, minLength: 4 })} />
                         {errors.password && <p className="error">Поле Пароль обязательное и должно содержать не менее 4 символов</p>}
                     </div>

@@ -4,7 +4,7 @@ export default function Form({ onClose }) {
         <button className="close-button" onClick={onClose}>
           X
         </button>
-        <form className="form"> {/* Добавили класс form */}
+        <form className="form">
           <div>
             <label htmlFor="email" className="label">Email:</label>
             <input id="email" type="email" className="input" required />
