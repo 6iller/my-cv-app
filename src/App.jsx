@@ -9,7 +9,7 @@ import BlogPost from './routes/BlogPost/BlogPost';
 import useWindowSize from './components/WindowSize/WindowSize';
 import BurgerMenu from './components/BurgerMenu/BurgerMenu';
 import { Provider } from 'react-redux';
-import store from './components/Redux/store/store.ts';
+import store from './components/Redux/store/store.js';
 import ToDo from './routes/ToDo/ToDo.jsx';
 
 export default function App() {
